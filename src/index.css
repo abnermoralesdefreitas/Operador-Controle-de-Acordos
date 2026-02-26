@@ -54,9 +54,10 @@ a {
 }
 
 .themeDark .appShell {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 280px 1fr;
+  display: grid !important;
+  grid-template-columns: minmax(250px, 280px) minmax(0, 1fr);
+  align-items: start;
+  min-height: 100vh;
 }
 
 /* Toast */
@@ -189,9 +190,9 @@ a {
 
 /* Main */
 .main {
-  height: 100vh;
-  overflow: auto;
-  padding: 16px;
+  padding: 18px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .topbar {
